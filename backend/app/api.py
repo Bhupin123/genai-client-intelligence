@@ -112,7 +112,7 @@ def _register_middleware(app: FastAPI) -> None:
 
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["*"],  # tighten to your Lovable URL in production
+        allow_origins=["*"],  
         allow_methods=["*"],
         allow_headers=["*"],
     )
